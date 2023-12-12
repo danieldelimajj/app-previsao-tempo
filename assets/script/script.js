@@ -9,7 +9,7 @@ function inputDataOnScreen(data) {
 
     document.querySelector('.forecast-text').innerHTML = data.weather[0].description // Muda o tempo de acordo com a cidade
 
-    document.querySelector('.humidity').innerHTML = data.main.humidity + '%' //Muda a umidade de acordo com a cidade
+    document.querySelector('.humidity').innerHTML = 'Umidade: ' + data.main.humidity + '%' //Muda a umidade de acordo com a cidade
 
     document.querySelector('.cloud-image').src =`https://openweathermap.org/img/wn/${data.weather[0].icon}.png` //Muda o icon de acordo com o tempo na cidade
 }
