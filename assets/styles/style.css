@@ -36,11 +36,15 @@ body {
     border-radius: 25px;
     border: none;
     outline: none;
-    text-indent: 2px;
+    text-indent: 1px;
     font-size: 20px;
     background-color: #7c7c7c2b;
     color: #f7f7f7;
     max-width: 480px;
+}
+
+.input-city::placeholder {
+    font-size: 18px;
 }
 
 .button-search {

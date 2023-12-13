@@ -5,9 +5,9 @@ function inputDataOnScreen(data) {
     console.log(data)
     document.querySelector('.tittle').innerHTML = 'Tempo em ' + data.name //Muda o título de acordo com a cidade 
     
-    document.querySelector('.min-temp').innerHTML = 'Mínima: ' +  (data.main.temp_min) + 'ºC'
+    document.querySelector('.min-temp').innerHTML = 'Mínima: ' +  Math.floor(data.main.temp_min) + 'ºC'
 
-    document.querySelector('.max-temp').innerHTML = 'Máxima: ' + (data.main.temp_max) + 'ºC' //Muda a temperatura máxima de acordo com a cidade
+    document.querySelector('.max-temp').innerHTML = 'Máxima: ' + Math.floor(data.main.temp_max) + 'ºC' //Muda a temperatura máxima de acordo com a cidade
 
     document.querySelector('.forecast-text').innerHTML = data.weather[0].description // Muda o tempo de acordo com a cidade
 
