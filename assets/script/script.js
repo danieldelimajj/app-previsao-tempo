@@ -5,7 +5,9 @@ function inputDataOnScreen(data) {
     console.log(data)
     document.querySelector('.tittle').innerHTML = 'Tempo em ' + data.name //Muda o título de acordo com a cidade 
     
-    document.querySelector('.temp').innerHTML = Math.floor(data.main.temp) + 'ºC' //Muda a temperatura de acordo com a cidade
+    document.querySelector('.min-temp').innerHTML = 'Mínima: ' +  (data.main.temp_min) + 'ºC'
+
+    document.querySelector('.max-temp').innerHTML = 'Máxima: ' + (data.main.temp_max) + 'ºC' //Muda a temperatura máxima de acordo com a cidade
 
     document.querySelector('.forecast-text').innerHTML = data.weather[0].description // Muda o tempo de acordo com a cidade
 
@@ -18,7 +20,7 @@ async function searchCity(city) {
     const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`).then(response => response.json())
 
     inputDataOnScreen(data)
-}
+} // Função para consumir os dados da api através da pesquisa do usuário. Foi alterado o idioma e a temperatura foi convertida para celcius.
 
 
 function clickOnButton() { 

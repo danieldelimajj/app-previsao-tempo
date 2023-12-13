@@ -16,49 +16,61 @@ body {
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 .first-box {
     background-color: #000;
     opacity: 0.8;
     border-radius: 25px;
-    padding: 30px;
+    padding: 20px;
+}
+
+.input-class {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .input-city {
-    padding: 10px;
+    padding: 15px;
     border-radius: 25px;
     border: none;
     outline: none;
-    text-indent: 4px;
-    width: 250px;
-    font-size: 15px;
+    text-indent: 2px;
+    font-size: 20px;
     background-color: #7c7c7c2b;
     color: #f7f7f7;
+    max-width: 480px;
 }
 
 .button-search {
     border-radius: 8px;
-    padding: 10px;
-    margin-left: 10px;
+    padding: 15px;
+    margin-left: 15px;
     border: none;
     cursor: pointer;
     background-color: #7c7c7c2b;
-    color: #f7f7f7;
-
+    
 }
 
-.image-search {
-    width: px;
-    padding-top: 11px;
+.image-search{
+    width: 17px;
 }
 
-.temp {
+.tittle {
     font-weight: 300;
     font-size: 25px;
-    padding-top: 15px;
+    text-align: center;
 }
+
+/*temperatura mínima e temperatura máxima*/
+.min-temp, .max-temp { 
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 25px;
+    text-indent: 16px;
+    
+} 
 
 .second-box {
     margin-top: 30px;
@@ -66,16 +78,11 @@ body {
     color: #f7f7f7;
 }
 
-.tittle {
-    font-weight: 300;
-    font-size: 25px;
-}
-
 
 .third-box {
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin: 20px 0px 5px 5px;
     gap: 5px;
 }
 
@@ -91,5 +98,6 @@ body {
     font-weight: 300;
     font-size: 25px;
     padding-top: 10px;
+    text-indent: 16px;
 }
 
