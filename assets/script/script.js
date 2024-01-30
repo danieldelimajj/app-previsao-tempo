@@ -7,7 +7,7 @@ function inputDataOnScreen(data) {
     
     document.querySelector('.min-temp').innerHTML = 'Mínima: ' +  Math.floor(data.main.temp_min) + 'ºC'
 
-    document.querySelector('.max-temp').innerHTML = 'Máxima: ' + Math.floor(data.main.temp_max) + 'ºC' //Muda a temperatura máxima de acordo com a cidade
+    document.querySelector('.max-temp').innerHTML = 'Máxima: ' + Math.ceil(data.main.temp_max) + 'ºC' //Muda a temperatura máxima de acordo com a cidade
 
     document.querySelector('.forecast-text').innerHTML = data.weather[0].description // Muda o tempo de acordo com a cidade
 
